@@ -1,0 +1,5 @@
+id,title,user_story,acceptance_criteria,business_value,estimation,status
+
+1,Donatella,aaaaaaa,aaaaa,100,0.5,planning
+2,Dömötör,bbb,bbbbbbb,300,0.5,done
+3,Diána,cccccccc,cccccc,600,1.5,review

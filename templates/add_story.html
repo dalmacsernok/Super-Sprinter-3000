@@ -1,0 +1,25 @@
+{% extends 'story.html' %}
+{% block add_form %}
+    <h1>Add User Story</h1>
+    <form action="/story" method="POST">
+    <label>Story Title:</label><br>
+    <input name="title" type="text" minlength="5" required="required"><br>
+    <br>
+    <label>User Story:</label><br>
+    <textarea name="user_story" rows="4" cols="40" required="required"></textarea><br>
+    <br>
+    <label>Acceptance Criteria:</label><br>
+    <textarea name="acceptance_criteria" rows="6" cols="40" required="required"></textarea><br>
+    <br>
+    <label>Business value:</label><br>
+    <input name="business_value" type="number" min="100" max="1500" step="100" value="100"><br>
+    <br>
+    <label>Estimation:</label><br>
+    <input name="estimation" type="number" min="0.5" max="40" step="0.5" value="0.5"><br>
+    <br>
+    <button type="submit">Add new User Story</button>
+    </form>
+{% endblock %}
+{% block add_title %}
+<title>Add User Story | Super Sprinter 3000</title>
+{% endblock %}
